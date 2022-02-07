@@ -14,6 +14,8 @@ jobs:
           script: |
             git clone git@github.com:kanin-kearpimy/nextjs-github-action.git
             cd nextjs-github-action
+            npm install .
+            npm run build
             npm start
             echo 'Deployment successfully to digital ocean.'
   # check-file-tree-and-bats-version:
