@@ -12,9 +12,9 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
-            mkdir test
-            cd test
             git clone git@github.com:kanin-kearpimy/nextjs-github-action.git
+            cd nextjs-github-action
+            npm start
             echo 'Deployment successfully to digital ocean.'
   # check-file-tree-and-bats-version:
   #   runs-on: ubuntu-latest
